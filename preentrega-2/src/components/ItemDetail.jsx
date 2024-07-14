@@ -1,5 +1,8 @@
+import ItemCount from "./ItemCount"
+
+
 const ItemDetail = ({ item }) => {
-    console.log(item)
+    
     return (
         <>
             <div className="container">
@@ -13,12 +16,18 @@ const ItemDetail = ({ item }) => {
                         <div className="alert alert-light" role="alert">
                             ¡Con Visa, Mastercard y Cabal tenes hasta 6 cuotas sin interes!
                         </div>
+                        <ItemCount item={item.stock}/>
                         <p><b>${item.prize}</b></p>
+                        
+                        
+                        
+                        
 
 
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }

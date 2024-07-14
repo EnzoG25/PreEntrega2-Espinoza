@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import ItemCount from "./ItemCount"
 
 
 const Item = ({ item }) => {
@@ -17,7 +16,7 @@ const Item = ({ item }) => {
                             <p className="card-text text-center">{item.title}</p>
                             <p className="card-text text-center">{item.description}</p>
                             <p className="card-text text-center">${item.prize}</p>
-                            <ItemCount item={item.stock} />
+                            
 
                         </div>
                     
