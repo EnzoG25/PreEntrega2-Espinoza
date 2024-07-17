@@ -1,14 +1,16 @@
 import ItemCount from "./ItemCount"
 
 
-const ItemDetail = ({ item }) => {
+const ItemDetail = ({item}) => {
     
     return (
         <>
+            
             <div className="container">
                 <div className="row">
-                    <div className="col-md-5 offset-md-2">
-                        <img src={item.image} alt={item.title} className="md-10" />
+                    <div className="col-md-3 offset-md-2">
+                        
+                    <img src={item.image} className="card-img-top" alt={item.name} />
                     </div>
                     <div className="col-md-3 text-center">
                         <h1>{item.title}</h1>
