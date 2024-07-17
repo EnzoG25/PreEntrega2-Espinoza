@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 
 const Item = ({ item }) => {
-
+console.log(item)
     return (
         <>
 
