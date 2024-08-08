@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
     const {id} = useParams();
     
-    console.log(item)
+    
     useEffect(() => {
         const promesa = new Promise(resolve => {
             setTimeout(() => {
