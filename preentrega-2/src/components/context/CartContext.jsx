@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 export const CartContext = createContext();
 
@@ -47,7 +48,7 @@ const CartContextProvider = ({children}) => {
         return cart.reduce((acum, item) => acum += item.quantity * item.prize, 0);
     }
 
-    return (<CartContext.Provider value={{ cart, addItem, removeItem, clear, totalProducts, sumProducts}}>
+    return (<CartContext.Provider value={{ cart, addItem, removeItem, clear, totalProducts, sumProducts, getFirestore, collection, addDoc}}>
 
         {children}
     </CartContext.Provider>
